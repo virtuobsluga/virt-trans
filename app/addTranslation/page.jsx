@@ -25,7 +25,7 @@ export default function AddTranslation () {
 
         try {
 
-            const res = await fetch("http://localhost:3000/api/translations", {
+            const res = await fetch("https://virt-trans.vercel.app/api/translations", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

@@ -19,7 +19,7 @@ export default function EditTranslationForm ({ id, path, assignee, created_by, a
         e.preventDefault();
 
         try {
-            const res = await fetch(`http://localhost:3000/api/translations/${id}`, {
+            const res = await fetch(`https://virt-trans.vercel.app/api/translations/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-type": "application/json",

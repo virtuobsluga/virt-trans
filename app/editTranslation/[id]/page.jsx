@@ -3,7 +3,7 @@ import React from 'react'
 
 const getTranslationById = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/translations/${id}`, {
+        const res = await fetch(`https://virt-trans.vercel.app/api/translations/${id}`, {
             cache: "no-store",
         });
 

@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const getTranslations = async () => {
     try {
-        const res = await fetch("http://localhost:3000/api/translations", {
+        const res = await fetch("https://virt-trans.vercel.app/api/translations", {
             cache: "no-store",
         });
 

@@ -9,7 +9,7 @@ export default function RemoveBtn ({ id }) {
         const confirmed = confirm("Czy chesz usunąć?");
 
         if (confirmed) {
-            const res = await fetch(`http://localhost:3000/api/translations?id=${id}`, {
+            const res = await fetch(`https://virt-trans.vercel.app/api/translations?id=${id}`, {
                 method: "DELETE",
             });
 
